@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel register</title>
+    <style>
+        body{
+            margin: 0;
+            font-family: arial;
+            background:aqua;
+            height:100vh;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .form-box{
+            background: white;
+            padding: 30px;
+            width: 300px;
+            border-radius:15px;
+        }
+        h2{
+            text-align: center;
+        }
+        input{
+            width:100%;
+            padding:8px;
+            margin:8px 0;
+            border-radius:5px;
+            border:1px solid pink;
+        }
+        button{
+            width: 100%;
+            padding: 10px;
+            background: lightblue;
+            color:white;
+            border:none;
+            border-radius:5px;
+            cursor: pointer;
+        }
+        button:hover{
+            background: rgb(239, 11, 49);
+        }
+        .link{
+            text-align:center;
+            margin-top: 10px;
+        }
+        .link a{
+            text-decoration:none;
+            color:rgb(238, 8, 8);
+        }
+    </style>
+</head>
+<body>
+    <div class="form-box">
+        <h2>Register</h2>
+        <form action="dashboard.html">
+            <input type="text" placeholder="Enter Your Full Name">
+            <input type="email" placeholder=" Enter Your Email Address ">
+            <input type="Tel" placeholder="Ente your Phone Number">
+            <input  type="Password" placeholder="Password">
+            <input type="Password" placeholder="Confirm Password">
+            <button>Submit</button>
+        </form>
+        <div class="link">
+            <p>Already have an Account?
+               <a href="login.html">Login</a>
+            </p>
+        </div> 
+    </div>
+</body>
+</html>

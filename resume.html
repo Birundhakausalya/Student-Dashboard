@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <style>
+        body{
+            margin:0;
+            font-family: arial;
+        }
+        #menu{
+            display:none;
+        }
+        .topbar{
+            background:lightgreen;
+            color:white;
+            padding:15px;
+        }
+        .menu-btn{
+            font-size:30px;
+            cursor: pointer;
+        }
+        .sidebar{
+            position:fixed;
+            left: -250px;
+            top:0;
+            width:250px;
+            height: 100%;
+            background: lightseagreen;
+            color: white;
+            padding-top: 10px 0;
+            transition: 0.4s;
+        }
+        .sidebar-a{
+            display: block;
+            color: white;
+            padding: 15px;
+            text-decoration: none;
+        }
+        .sidebar-a:hover{
+            background: lightskyblue;
+        }
+        #menu:checked ~ .sidebar{
+            left:0;
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox" id="menu">
+    <div class="topbar">
+        <label for="menu" class="menu-btn">☰</label>
+        Student Dashboard
+    </div>
+    <div class="sidebar">
+        <a href="#">Profile</a>
+        <a href="#">Attendance</a>
+        <a href="#">Assignments</a>
+        <a href="#">Performance</a>
+        <a href="#">Resume</a>
+        <a href="#">Logout</a>
+        
+    </div>
+</body>
+</html>

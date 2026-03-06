@@ -1,0 +1,101 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <style>
+        .cards{
+            display:grid;
+            grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+            gap:20px;
+            margin-top: 20px;
+        }
+        card{
+            background: white;
+            padding:20px;
+            border-radius: 10px;
+            box-shadow: 0 3px 6px rgba(red, green, blue, alpha);
+        }
+        chart{
+            margin-top: 20px;
+        }
+          .logout{
+        margin-top:20px;
+        padding: 10px;
+        background: red;
+        color:white;
+        border:none;
+        cursor: pointer;
+      }
+        .bar{
+            height: 20px;
+            background:rgb(35, 125, 110);
+            margin:10px 0;
+            border-radius:5px;
+        }
+        .bar span{
+            display: block;
+            height: 100%;
+            background:lightslategray;
+            border-radius:5px;
+        }
+    </style>
+ </head>
+ <body>
+ <div class="content">
+        <h2>Birundha Dashborad</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Profile</h3>
+                <p>Name: Birundha</p>
+                <p>Department : CSE</p>
+            </div>
+            <div class="card">
+                <h3>Attendance</h3>
+                <p>Present : 85%</p>
+            </div>
+            <div class="card">
+                <h3>Assignments</h3>
+                <p>Completed:6</p>
+                <p>Pending: 5</p>
+            </div>
+            <div class="card">
+                <h3>Resume Upload</h3>
+                <input type="file">
+            </div>
+            <div class="card">
+                    <h3>Aptitude Test</h3>
+                    <p>Score: 75%</p>
+            </div>
+        <div>
+            <h2>Select Programming Language</h2>
+
+            <input type="radio" name="lang" id="java">
+            <label for="java">Java</label>
+
+            <input type="radio" name="lang" id="c++">
+            <label for="c++">C++</label>
+
+            <input type="radio" name="lang" id="c">
+            <label for="c">C</label>
+
+            <input type="radio" name="lang" id="python">
+            <label for="python">Python</label>
+        </div>
+        </div>
+    </div>
+    <div  class="chart">
+        <h3>Performance</h3>
+        <p>Aptitude</p>
+        <div class="bar"><span style="width:75%"></span></div>
+        <p>Programming</p>
+        <div class="bar"><span style="width:65%"></span></div>
+        <p>Projects</p>
+        <div class="bar"><span style="width:80%"></span></div>
+    </div>
+    <button class="logout" onclick="alert('Are You Sure to Exit')">Logout</button>
+</div>
+       
+ </body>
+ </html>
