@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aptitude Test</title>
+    <link rel="Dash" href="Dash.html">
+    <style>
+        body{
+            font-family: Arial;
+            background: lightblue;
+        }
+        .container{
+            width:500px;
+            margin:auto;
+            background:white;
+            padding:20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px gray;
+        }
+        h2{
+            text-align: center;
+        }
+        button{
+            background: blue;
+            color:white;
+            padding:10px;
+            border:none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Aptitude Test</h2>
+        <form>
+            <p>1. What is 10 + 5 ?</p>
+            <input type="radio" name="q1" value="a"> 12 <br>
+            <input type="radio" name="q1" value="b"> 15 <br>
+            <input type="radio" name="q1" value=""> 20 <br>
+
+            <p> What is 20 / 4 ?</p>
+            <input type="radio" name="q2" value="a"> 5 <br>
+            <input type="radio" name="q2" value="b"> 6 <br>
+            <input type="radio" name="q2" value="c"> 4 <br>
+
+            <p>3. What is 7 * 3 ?</p>
+             <input type="radio" name="q3" value="a"> 21 <br>
+             <input type="radio" name="q3" value="b"> 87 <br>
+             <input type="radio" name="q3" value="c"> 18 <br>
+             <br>
+             <button type="button" onclick="checkScore()">Submit</button>
+             </form>
+    </div>
+</body>
+</html>

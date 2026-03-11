@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Study Materials</title>
+<link rel="dash" href="Dash.html">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+
+body{
+background:#f1f5f9;
+background-image: url(https://media.istockphoto.com/id/1248378027/vector/vector-seamless-pattern-with-education-back-to-school-icons-doodle-student-dark-background.jpg?s=612x612&w=0&k=20&c=faIgQ0wy5ssG7W-B6GyeFkNEASh9NSraNhNlpe_gbe8=);
+}
+
+.container{
+width:85%;
+margin:auto;
+margin-top:40px;
+}
+
+.title{
+font-size:28px;
+margin-bottom:25px;
+text-align: center;
+color:white;
+}
+
+.material-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.08);
+}
+
+.card h3{
+margin-bottom:10px;
+color:#2ea7a2;
+}
+
+.card p{
+margin-bottom:15px;
+color:#555;
+}
+
+.btn{
+display:inline-block;
+padding:8px 15px;
+background:#2ea7a2;
+color:white;
+text-decoration:none;
+border-radius:6px;
+font-size:14px;
+}
+
+.btn:hover{
+background:#08d345;
+}
+
+.progress{
+background:#ddd;
+height:10px;
+border-radius:10px;
+margin-top:10px;
+}
+
+.bar{
+height:10px;
+background:#27ae60;
+border-radius:10px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1 class="title">Study Materials</h1>
+
+<div class="material-grid">
+<div class="card">
+    <h3>Data Structures</h3>
+<p>Notes, PDF and Lab Materials</p>
+
+<a href="#" class="btn">Download Notes</a>
+
+<div class="progress">
+<div class="bar" style="width:80%"></div>
+</div>
+
+<p>80% Completed</p>
+
+</div>
+
+<div class="card">
+
+<h3>Operating Systems</h3>
+<p>PPT, Reference Books</p>
+
+<a href="#" class="btn">Download PPT</a>
+
+<div class="progress">
+<div class="bar" style="width:65%"></div>
+</div>
+
+<p>65% Completed</p>
+
+</div>
+
+<div class="card">
+
+<h3>Computer Networks</h3>
+<p>Lecture Notes & Lab Guide</p>
+
+<a href="#" class="btn">Download PDF</a>
+
+<div class="progress">
+<div class="bar" style="width:5%"></div>
+</div>
+
+<p>75% Completed</p>
+
+</div>
+<div class="card">
+
+<h3>Database Management</h3>
+<p>DBMS Notes & SQL Practice</p>
+
+<a href="#" class="btn">Download Notes</a>
+
+<div class="progress">
+<div class="bar" style="width:50%"></div>
+</div>
+
+<p>50% Completed</p>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>

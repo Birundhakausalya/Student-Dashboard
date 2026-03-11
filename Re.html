@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Page</title>
+    <link rel="Dash" href="Dash.html">
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+            font-family:Arial;
+        }
+        body{
+            background:black;
+            background-image: url(https://media.istockphoto.com/id/1248378027/vector/vector-seamless-pattern-with-education-back-to-school-icons-doodle-student-dark-background.jpg?s=612x612&w=0&k=20&c=faIgQ0wy5ssG7W-B6GyeFkNEASh9NSraNhNlpe_gbe8=);
+
+        }
+        .container{
+            width:85%;
+            margin:auto;
+            margin-top:40px;
+        }
+        .title{
+            font-size:28px;
+            margin-bottom:25px;
+            text-align: center;
+            color: white;
+        }
+        .card{
+            background:white;
+            padding:30px;
+            border-radius:10px;
+            box-shadow:0 4px 10px rgba(red, green, blue, alpha);
+            margin-bottom:25px;
+        }
+        .upload-box{
+                border:2px dashed red;
+                padding: 40px;
+                text-align:center;
+                border-radius: 10px;
+                background:white;
+        }
+        .upload-box p{
+            margin-bottom:15px;
+            color:black;
+        }
+        .btn{
+            background: lightblue;
+            color:white;
+            padding:20px;
+            cursor: pointer;
+        }
+        .btn:hover{
+            background: rgb(225, 6, 6);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">Resume Management</div>
+        <div class="card">
+            <h2>Upload Resume</h2>
+            <br>
+            <div class="upload-box">
+                <p>Drag & Drop Your Resume</p>
+            </div>
+        </div>
+        <div class="card">
+            <h2>Current Resume</h2>
+            <br>
+                <!-- <button class="btn">update Resume</button> -->
+                <form class="btn">
+                <input type="file" placeholder="upload file">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
