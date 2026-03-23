@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    
+</head>
+<body>
+    <div class="container-fluid">
+        <h1>Hello World!</h1>
+        <p>Resize the <abbr title="world health organization">Browser</abbr> window to see the effect.</p>
+    </div>
+    <div class="row">
+        <div class="col-sm-4" style="background-color: rgb(10, 226, 154);">col-sm-8</div>
+        <div class="col-md-8" style="background-color: rgb(10, 226, 154);">col-md-8</div><br><br>
+        <div class="col-lg-3" style="background-color: rgb(10, 226, 154);">col-lg-4</div>
+    </div>
+    <div class="container"><br>
+        <p>Description List</p>
+        <p> The Element Indicates a Description list:</p>
+        <dl>
+            <dt>Coffee</dt>
+            <dd>Price</dd>
+        </dl>
+        <dl>
+            <dt>Milk</dt>
+            <dd>price</dd>
+        </dl>
+        <p>The following HTML elemnts:<code>span</code>, <code>section</code> , <code>div</code></p>
+        <pre>
+            Text in a pre Element is displayejd in a fixed-width font, and it preserves both spaces and line breaks.
+        </pre>
+        <pre class="pre-scrollable">
+            Text in a pre element is displayed in a fixed-width font, and it preserves both spaces and line breaks.
+            Text in a pre element is displayed in a fixed-width font, and it preserves both spaces and line breaks.
+            Text in a pre element is displayed in a fixed-width font, and it preserves both spaces and line breaks.
+            Text in a pre element is displayed in a fixed-width font, and it preserves both spaces and line breaks.
+        </pre>
+        <h2>Contextual Background</h2>
+        <p>Use the Contextual background classes to provide "meaning through colors":</p>
+        <p class="bg-primary">This text is important</p>
+        <p class="bg-success" style="background-color: green;">This text is Success</p>
+        <p class="bg-info">This text represents some information.</p>
+        <p class="bg-warning">THis text indicates Warning message</p>
+        <p class="bg-danger" style="background-color: red;">This text represents danger.</p>
+        <p class="lead">This paragraph stands out.</p>
+        <p class="small">This paragraph is smaller</p>
+        <p class="text-left">left-align</p>
+        <p class="text-right">right-align</p>
+        <p class="text-center">center text</p>
+        <p class="text-justify">Justified text.Justified</p>
+        <p class="text-lowercase">The text is lowercase</p>
+        <p class="text-uppercase"> The text is Uppercase</p>
+        <p class="text-capitalize">The text is capitalized</p>
+    </div>
+    <div  class="container">
+        <h2>Typography</h2>
+        <p>The class .list-unstyled rremoves the degault life-style and left margin on list items</p>
+        <ul class="list-unstyled">
+            <li>Coffee</li>
+            <li>Tea
+                <ul>
+                    <li>Black Tea</li>
+                    <li>Green Tea</li>
+                </ul>
+            </li>
+            <li>Milk</li>
+        </ul>
+        <br>
+        <hr>
+        <ul class="list-inline">
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ul>
+        <br>
+        <br>
+        <dl class="dl-horizontal">
+            <dt>Coffee</dt>
+            <dd>Black Drink</dd>
+            <dt>Milk</dt>
+            <dd>White cold drink</dd>
+        </dl>
+        <p><Strong> Tip:</Strong> Try to Resize the browser window to see the behaviour of the descrption list.</p>
+        <p>The .table-hover class enables a hover state on table rows:</p>
+        <table class="table table-hover">
+            <thead>
+                <tr class="danger">
+                    <th>Firstname</th>
+                    <th>LastName</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tboady>
+                <tr class="info">
+                <td>john</td>
+                <td>Doe</td>
+                <td>john@example.com</td>
+                </tr>
+                <tr class="warning">
+                <td>Mary</td>
+                <td>Moe</td>
+                <td>mary@example.com</td>
+                </tr>
+                <tr class="active">
+                <td>July</td>
+                <td>Dooley</td>
+                <td>july@example.com</td>
+                </tr>
+            </tboady>
+        </table>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvu73q5R0rSwjae8VBlffGOjvHxCuIhsFA3A&s" class="img-rounded" alt="image"><br><br>
+        <img src="https://media.istockphoto.com/id/686026812/photo/colors-of-italy-series-manarola-village-cinque-terre.jpg?s=612x612&w=0&k=20&c=otUru0SGHIEsMcQz_NXjb1HJ2xCfEaOdDDgXPINe4pc=" class="thumbnail" alt="Sunflower"><br><br>
+        <img src="https://media.istockphoto.com/id/686026812/photo/colors-of-italy-series-manarola-village-cinque-terre.jpg?s=612x612&w=0&k=20&c=otUru0SGHIEsMcQz_NXjb1HJ2xCfEaOdDDgXPINe4pc=" class="img-circle" alt="Flower" width="304" height="236"> 
+            <div class="container">
+            <h2>Well</h2>
+            <div class="well">Basic Well</div>
+            <div class="well well-sm">Small well</div>
+            <div class="well well-lg"> Large Well</div>
+            </div>
+    </div>
+        <div class="alert alert-success">
+        <strong>Success!</strong> Indicates a successful or positive action.
+        </div>
+        <div class="container">
+                <button type="button" class="btn">Basic</button>
+                <button type="button" class="btn btn-primary">Primary</button>
+                <button type="button" class="btn btn-secondary">Secondary</button>
+                <button type="button" class="btn btn-success">Success</button>
+                <button type="button" class="btn btn-info">Info</button>
+                <button type="button" class="btn btn-warning">Warning</button>
+                <button type="button" class="btn btn-danger">Danger</button>
+                <button type="button" class="btn btn-dark">Dark</button>
+                <button type="button" class="btn btn-light">Light</button>
+                <button type="button" class="btn btn-link">Link</button>
+                <br>
+                <br>
+                <br>
+                <button type="button" class="btn btn-primary btn-lg">Large</button>
+                <button type="button" class="btn btn-primary">Default</button>
+                <button type="button" class="btn btn-primary btn-sm">Small</button>
+        <br>
+        <br>
+<div class="d-grid gap-3">
+  <button type="button" class="btn btn-primary">Full-Width Button</button>
+  <button type="button" class="btn btn-primary">Full-Width Button</button>
+  <button type="button" class="btn btn-primary">Full-Width Button</button>
+</div><br><br>
+<div>
+    <button type="button" class="btn btn-primary active">Active Primary</button>
+    <button type="button" class="btn btn-primary" disabled>Disabled Primary</button>
+    <a href="#" class="btn btn-primary disabled">Disabled Link</a>
+</div><br><br>
+<div>
+<button class="btn btn-primary">
+  <span class="spinner-border spinner-border-sm"></span>
+  Loading..
+</button><br><br>
+</div><br><br>
+<div class="btn-group">
+  <button type="button" class="btn btn-primary">Apple</button>
+  <button type="button" class="btn btn-primary">Samsung</button>
+  <button type="button" class="btn btn-primary">Sony</button>
+</div><br><br>
+<div class="btn-group btn-group-lg">
+  <button type="button" class="btn btn-primary">Apple</button>
+  <button type="button" class="btn btn-primary">Samsung</button>
+</div><br><br>
+<div class="btn-group">
+  <button type="button" class="btn btn-primary">Apple</button>
+  <button type="button" class="btn btn-primary">Samsung</button>
+  <div class="btn-group">
+    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Sony</button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Tablet</a>
+      <a class="dropdown-item" href="#">Smartphone</a>
+    </div>
+  </div>
+</div>   <button class="btn btn-primary" disabled>
+            <span class="spinner-grow spinner-grow-sm"></span>
+            Loading..
+        </button>
+        <br><br>
+        <div class="btn btn-primary" class="container" style="text-align:left">
+        <h1>Example heading <span class="badge bg-secondary">New</span></h1>
+        <h2>Example heading <span class="badge bg-secondary">New</span></h2>
+        <h3>Example heading <span class="badge bg-secondary">New</span></h3>
+        <h4>Example heading <span class="badge bg-secondary">New</span></h4>
+        <h5>Example heading <span class="badge bg-secondary">New</span></h5>
+        <h6>Example heading <span class="badge bg-secondary">New</span></h6>
+
+            <span class="badge bg-primary">Primary</span>
+            <span class="badge bg-secondary">Secondary</span>
+            <span class="badge bg-success">Success</span>
+            <span class="badge bg-danger">Danger</span>
+            <span class="badge bg-warning">Warning</span>
+            <span class="badge bg-info">Info</span>
+            <span class="badge bg-light">Light</span>
+            <span class="badge bg-dark">Dark</span>
+            </div>
+            <br><br>
+            <div class="btn btn-success">
+        <button type="button" class="btn btn-primary">
+        Messages <span class="badge bg-success">4</span>
+        </button>
+        </div><br><br>
+        <div class="progress" style="height:20px">
+             <div class="progress-bar" style="width:40%;"></div>
+        </div>
+        <div class="progress">
+            <div class="progress-bar" style="width:70%">70%</div>
+        </div>
+             <div class="progress">
+        <div class="progress-bar progress-bar-striped" style="width:40%"></div>
+        <div class="spinner-border"></div>
+        <div class="spinner-border text-muted"></div>
+        <div class="spinner-border text-primary"></div>
+        <div class="spinner-border text-success"></div>
+        <div class="spinner-grow text-muted"></div>
+        <div class="spinner-grow text-primary"></div>
+        <div class="spinner-grow text-success"></div>
+        <div class="spinner-grow text-info"></div>
+        <div class="container">
+
+                <ul class="pagination pagination-lg">
+                    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                </ul>
+
+                <ul class="list-group">
+                    <li class="list-group-item active">Active item</li>
+                    <li class="list-group-item">Second item</li>
+                    <li class="list-group-item">Third item</li>
+                </ul>
+        </div>
+</div>
+</div>
+<div class="card" style="width:500px">
+  <img class="card-img-top" src="https://images.ctfassets.net/hrltx12pl8hq/5596z2BCR9KmT1KeRBrOQa/4070fd4e2f1a13f71c2c46afeb18e41c/shutterstock_451077043-hero1.jpg?fit=fill&w=600&h=400" alt="Card image">
+  <div class="card-img-overlay">
+    <h4 class="card-title">John Doe</h4>
+    <p class="card-text">Some example text.</p>
+    <a href="#" class="btn btn-primary">See Profile</a>
+  </div>
+</div>
+</body>
+</html>

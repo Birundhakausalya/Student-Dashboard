@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ByteWebster</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #eef3f7;
+      background-image: url(byte\ image.png);
+    }
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 60px;
+    }
+    .logo {
+      font-size: 22px;
+      font-weight: bold;
+    }
+    .byte {
+      color: #2b6cb0;
+    }
+    .webster {
+      color: #f97316;
+    }
+    .nav-links a {
+      margin: 0 15px;
+      position: relative;
+      text-decoration: none;
+      color: #333;
+      font-size: 14px;
+    }
+    .nav-links a::after{
+        content: "";
+        position:absolute;
+        left: 0;
+        bottom: -5px;
+        width: 0%;
+        height: 3px;
+        background: orange;
+        transition: 0.3s;
+    }
+    .nav-links a:hover::after{
+        width:100%
+    }
+    .btn {
+      background: #2b6cb0;
+      color: white;
+      padding: 8px 15px;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+    .btn:hover{
+        background-color: #f97316;
+    }
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 60px;
+    }
+    .hero-text {
+      max-width: 500px;
+    }
+    .hero-text h1 {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+    .hero-text p {
+      color: #555;
+      line-height: 1.6;
+    }
+    .hero-text .btn-main {
+      margin-top: 20px;
+      display: inline-block;
+      background: #2b6cb0;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+    .hero-text .btn-main:hover{
+        background-color: rgb(243, 142, 10);
+    }
+    .background {
+      width: 100%;
+      margin-top: 40px;
+    }
+     </style>
+</head>
+<body>
+  <div class="navbar">
+    <div class="logo">
+      <span class="byte">Byte</span><span class="webster">Webster</span>
+    </div>
+     <div class="nav-links">
+      <a href="#">Rates</a>
+      <a href="#">About Us</a>
+      <a href="#">Resources</a>
+      <a href="#">FAQs</a>
+      <a href="#">Services</a>
+      <a href="#" class="btn">Get Started</a>
+    </div>
+  </div>
+  <div class="hero">
+    <div class="hero-text">
+      <h1>
+        Welcome To 
+        <span class="byte">Byte</span><span class="webster">Webster</span>
+      </h1>
+      <p>
+        ByteWebster is a Professional web development and coding blog website.
+        Here you will find projects and coding blogs made from HTML, CSS, and JavaScript.
+      </p>
+      <p>
+        Our Projects focus on creating Responsive web design, and developing optimized Web applications.
+      </p>
+      <a href="#" class="btn-main">Find Projects</a>
+  </div>
+</body>
+</html>

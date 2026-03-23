@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student registration Form</title>
+    <style>
+        body{
+            margin: 10%;
+            align-items: center;
+            background-color: bisque;
+            display: flex;
+            padding: 0px;
+            justify-content: center;
+            font-family: Arial;
+
+        }
+        .container{
+            width:1000px;
+            background:rgb(230, 152, 8);
+            padding:30px;
+            border-radius:50px;
+            text-align: center;
+        }
+        input{
+             box-sizing: border-box;
+             width:220px;
+             padding: 8px;
+             margin-top: 8px;
+        }
+        .gender-group {
+            text-align:left;
+            align-items: center;
+        }
+
+        .gender-group label {
+            display: flex;
+            margin-top:5px;
+            }
+            input[type="radio"]{
+                transform:scale(1.5);
+                margin-right:30px;
+            }
+        .skills-group {
+              text-align: left;
+            }
+
+        .skills-group label {
+            display: block;
+            margin: 1px 0;
+            }
+            input[type="Checkbox"]{
+                transform:scale(1.5);
+                margin-right: 8px;
+            }
+             h1{
+            background-color: black;
+            text-align: center;
+            background:white;
+            margin-top: 50px;
+        }
+        table{
+            border-collapse: collapse;
+            margin: 40px auto;
+            width:60%;
+            background:white;
+            box-shadow: 0 5px 15px rgba(red, green, blue, alpha);
+        }
+        th,td{
+            border: 1px solid black;
+            padding: 15px;
+            text-align:center;
+        }
+        th{
+            background:rgb(218, 218, 4);
+            color: white;
+        }
+        td:hover{
+            background: lightcoral;
+            cursor: pointer;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h2 style="text-align: center;"> Student Registration Details</h2>
+    <form action="login.html" method="get" target="_blank">
+        <fieldset>
+            <legend style="text-align: left;">Personal Details</legend>
+            <label for="fname">First Name :</label>
+            <input type="text" id="fname" name="fname" placeholder="Enter Your First Name" pattern="[A-Za-z]+" required oninput="this.value = this.value.replace(/[^A-aZ-z]/g, '')" title="Only letters are allowed" maxlength="4"><br><br>
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname" placeholder="Enter Your Last Name" readonly><br><br>
+            <label for="Email"> Email Address: </label>
+            <input type="email" id="Email" name="Email" placeholder="Enter Your Email ID" autocomplete="off" inputmode="email"><br><br>
+            <label for="password">Enter Password *:  </label>
+            <input type="password" id="password" name="password" placeholder="Enter password" required autofocus="on"><br><br>
+            <label for="password">ReEnter password *:</label>
+            <input type="password" id="password" name="password" placeholder="ReEnter Password" required><br><br>
+            <lable for="number">Phone Number: </lable>
+            <input type="tel" inputmode="numeric" name="phone" placeholder="Enter 10 digit number" pattern="[0-9]{10}" maxlength="10" onkeypress="return event.charCode >= 48 && event.charCode <= 57"  oninput="this.valu = this.value.replace(/\D/g, '')" onpaste="setTimeout(() => this.value = this.value.replace(/\D/g, ''), 0)" required><br><br>
+            <label for="age">Age: </label>
+            <input type="number" placeholder="Enter Age" maxlength="2" min="18" max="60" width="20px" oninput="this.value = this.value.replace(/\D/g, '')"><br><br>
+            <label for="dob">DOB: </label>
+            <input type="date" id="dob" name="dob" placeholder="Enter your DOB" pattern="\d{2}/\d{2}/\d{4}"><br><br>
+             <label for="dob">Date & Time: </label>
+            <input type="datetime-local" id="dob" name="dob"><br><br>
+            </fieldset><br><br>
+           <fieldset class="gender-group">
+                 <legend>Gender</legend>
+                <label>
+                    <input type="radio" id="male" name="gender" value="Male">Male
+                </label><br>
+                <label>
+                    <input type="radio" id="female" name="gender" value="Female">Female
+                </label><br>
+                 <label>
+                    <input type="radio" id="others" name="gender" value="others">Others
+                </label>
+            </fieldset><br><br>
+            <fieldset>
+                <legend style="text-align: left;">Course Selection</legend>
+                <label for="course">Choose Course:</label>
+                <select id="course" name="course">
+                    <option value="">---SELECT---</option>
+                    <option value="CSE" selected>CSE</option>
+                    <option value="IT">IT</option>
+                    <option value="MECH">MECH</option>
+                    <option value="AIDS">AIDS</option>
+                    <option value="">Others</option>
+                </select>
+            </fieldset><br><br>
+            <fieldset class="skills-group">
+                <legend>Skills</legend>
+                <label>
+                <input type="checkbox" id="Java" value="JAVA">Java
+                </label><br>
+                <label>
+                <input type="checkbox" id="HTML" value="HTML" checked onclick="return false;">HTML 
+                </label> <br>
+                <label>
+                <input type="checkbox" id="CSS" value="CSS" checked>CSS 
+                </label><br>
+                <label>
+                <input type="checkbox" id="JavaScript" value="JavaScript" checked disabled>JavaScript
+                </label><br>
+            </fieldset> <br><br>
+            <fieldset>
+                 <legend style="text-align: left;">File Upload</legend>
+                <input type="file"  accept="application/pdf" multiple>
+                  <input type="file"  accept="application/pdf" multiple>
+                    <input type="file"  accept="application/pdf" multiple>
+                      <input type="file"  accept="application/pdf" multiple>
+            </fieldset><br><br>
+            <fieldset>
+                 <legend style="text-align: left;">Feedback</legend>
+                <textarea name="feedback" rows="4" cols="10" placeholder="Enter Your Feedback max 50 words" maxlength="50"></textarea>
+            </fieldset><br><br>
+            <fieldset>
+                <legend>Choose State</legend>
+                <label for="Country">Select Country : </label>
+                <input  type="search" list="countries" id="country"  placeholder="Type to Search">
+                <datalist id="countries">
+                        <option value="Afghanistan"></option>
+                        <option value="Albania"></option>
+                        <option value="Algeria"></option>
+                        <option value="Andorra"></option>
+                        <option value="Angola"></option>
+                        <option value="Argentina"></option>
+                        <option value="Armenia"></option>
+                        <option value="Australia"></option>
+                        <option value="Austria"></option>
+                        <option value="Azerbaijan"></option>
+                        <option value="Bahamas"></option>
+                        <option value="Bahrain"></option>
+                        <option value="Bangladesh"></option>
+                        <option value="Barbados"></option>
+                        <option value="Belarus"></option>
+                        <option value="Belgium"></option>
+                        <option value="Belize"></option>
+                        <option value="Benin"></option>
+                        <option value="Bhutan"></option>
+                        <option value="Bolivia"></option>
+                        <option value="Bosnia and Herzegovina"></option>
+                        <option value="Botswana"></option>
+                        <option value="Brazil"></option>
+                        <option value="Brunei"></option>
+                        <option value="Bulgaria"></option>
+                        <option value="Burkina Faso"></option>
+                        <option value="Burundi"></option>
+                        <option value="Cambodia"></option>
+                        <option value="Cameroon"></option>
+                        <option value="Canada"></option>
+                        <option value="Chad"></option>
+                        <option value="Chile"></option>
+                        <option value="China"></option>
+                        <option value="Colombia"></option>
+                        <option value="Comoros"></option>
+                        <option value="Congo"></option>
+                        <option value="Costa Rica"></option>
+                        <option value="Croatia"></option>
+                        <option value="Cuba"></option>
+                        <option value="Cyprus"></option>
+                        <option value="Czech Republic"></option>
+                        <option value="Denmark"></option>
+                        <option value="Djibouti"></option>
+                        <option value="Dominica"></option>
+                        <option value="Dominican Republic"></option>
+                        <option value="Ecuador"></option>
+                        <option value="Egypt"></option>
+                        <option value="El Salvador"></option>
+                        <option value="Estonia"></option>
+                        <option value="Eswatini"></option>
+                        <option value="Ethiopia"></option>
+                        <option value="Fiji"></option>
+                        <option value="Finland"></option>
+                        <option value="France"></option>
+                        <option value="Gabon"></option>
+                        <option value="Gambia"></option>
+                        <option value="Georgia"></option>
+                        <option value="Germany"></option>
+                        <option value="Ghana"></option>
+                        <option value="Greece"></option>
+                        <option value="Guatemala"></option>
+                        <option value="Guinea"></option>
+                        <option value="Guyana"></option>
+                        <option value="Haiti"></option>
+                        <option value="Honduras"></option>
+                        <option value="Hungary"></option>
+                        <option value="Iceland"></option>
+                        <option value="India"></option>
+                        <option value="Indonesia"></option>
+                        <option value="Iran"></option>
+                        <option value="Iraq"></option>
+                        <option value="Ireland"></option>
+                        <option value="Israel"></option>
+                        <option value="Italy"></option>
+                        <option value="Jamaica"></option>
+                        <option value="Japan"></option>
+                        <option value="Jordan"></option>
+                        <option value="Kazakhstan"></option>
+                        <option value="Kenya"></option>
+                        <option value="Kuwait"></option>
+                        <option value="Kyrgyzstan"></option>
+                        <option value="Laos"></option>
+                        <option value="Latvia"></option>
+                        <option value="Lebanon"></option>
+                        <option value="Lesotho"></option>
+                        <option value="Liberia"></option>
+                        <option value="Libya"></option>
+                        <option value="Lithuania"></option>
+                        <option value="Luxembourg"></option>
+                        <option value="Madagascar"></option>
+                        <option value="Malawi"></option>
+                        <option value="Malaysia"></option>
+                        <option value="Maldives"></option>
+                        <option value="Mali"></option>
+                        <option value="Malta"></option>
+                        <option value="Mauritania"></option>
+                        <option value="Mauritius"></option>
+                        <option value="Mexico"></option>
+                        <option value="Moldova"></option>
+                        <option value="Mongolia"></option>
+                        <option value="Montenegro"></option>
+                        <option value="Morocco"></option>
+                        <option value="Mozambique"></option>
+                        <option value="Myanmar"></option>
+                        <option value="Namibia"></option>
+                        <option value="Nepal"></option>
+                        <option value="Netherlands"></option>
+                        <option value="New Zealand"></option>
+                        <option value="Nicaragua"></option>
+                        <option value="Niger"></option>
+                        <option value="Nigeria"></option>
+                        <option value="North Korea"></option>
+                        <option value="Norway"></option>
+                        <option value="Oman"></option>
+                        <option value="Pakistan"></option>
+                        <option value="Panama"></option>
+                        <option value="Paraguay"></option>
+                        <option value="Peru"></option>
+                        <option value="Philippines"></option>
+                        <option value="Poland"></option>
+                        <option value="Portugal"></option>
+                        <option value="Qatar"></option>
+                        <option value="Romania"></option>
+                        <option value="Russia"></option>
+                        <option value="Rwanda"></option>
+                        <option value="Saudi Arabia"></option>
+                        <option value="Senegal"></option>
+                        <option value="Serbia"></option>
+                        <option value="Singapore"></option>
+                        <option value="Slovakia"></option>
+                        <option value="Slovenia"></option>
+                        <option value="Somalia"></option>
+                        <option value="South Africa"></option>
+                        <option value="South Korea"></option>
+                        <option value="Spain"></option>
+                        <option value="Sri Lanka"></option>
+                        <option value="Sudan"></option>
+                        <option value="Sweden"></option>
+                        <option value="Switzerland"></option>
+                        <option value="Syria"></option>
+                        <option value="Taiwan"></option>
+                        <option value="Tajikistan"></option>
+                        <option value="Tanzania"></option>
+                        <option value="Thailand"></option>
+                        <option value="Tunisia"></option>
+                        <option value="Turkey"></option>
+                        <option value="Uganda"></option>
+                        <option value="Ukraine"></option>
+                        <option value="United Arab Emirates"></option>
+                        <option value="United Kingdom"></option>
+                        <option value="United States"></option>
+                        <option value="Uruguay"></option>
+                        <option value="Uzbekistan"></option>
+                        <option value="Venezuela"></option>
+                        <option value="Vietnam"></option>
+                        <option value="Yemen"></option>
+                        <option value="Zambia"></option>
+                        <option value="Zimbabwe"></option>
+                </datalist> <br><br>
+                   <fieldset>
+                        <legend style="text-align: left;">Choose Id color</legend>
+                        <label for="card">ID CARD:</label>
+                        <input type="color" id="card"  name="card" placeholder="Choose color">
+                     </fieldset><br><br>
+                     <fieldset>
+                        <legend style="text-align: left;">Language </legend>
+                        <label for="tamil">Tamil:</label>
+                        <input type="range" id="tamil" name="tamil" min="0" max="100"><br><br>
+                        <label for="English">English:</label>
+                        <input type="range" id="English" name="english" min="0" max="100">
+                     </fieldset>
+            </fieldset><br><br>
+            <fieldset>
+                <legend style="text-align:left;">Hidden values</legend>
+                <form>
+                    <input type="text" name="name" placeholder="Enter name">
+                    <input type="hidden" name="course" value="CSE">
+                    <button type="submit">submit</button>
+                    <!-- <p hidden> This is hidden text</p> -->
+                </form>
+                <fieldset>
+                    <legend style="text-align: left;">Search</legend>
+                    <form>
+                        <label for="search">Search</label>
+                        <input type="search" id="box" name="search" placeholder="search here">
+                    </form>
+                </fieldset>
+                <fieldset>
+                    <legend style="text-align: left;">Website</legend>
+                    <label>Website</label>
+                    <input type="url" placeholder="Enter Your Website">
+                </fieldset>
+            </fieldset>
+            <fieldset>
+                <legend style="text-align: left;">Click image</legend>
+                <form>
+                    <input type="image" src="schl.png" alt="submit" width="100"><br><br>
+                    <progress value="60" max="100"></progress>
+                    <meter value="9" min="0" max="10"></meter>
+                </form>
+            </fieldset>
+            <fieldset>
+                <legend style="text-align: center;">Time Table</legend>
+            <h1>Daily Calender</h1>
+            <h1>March 2026</h1>
+    <table>
+        <tr>
+        <th>Sunday</th>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+        <th>Saturday</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>1</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td style="background-color: blueviolet;">3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+            <td>16</td>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td>18</td>
+            <td>19</td>
+            <td>20</td>
+            <td>21</td>
+            <td>22</td>
+            <td>23</td>
+        </tr>
+        <tr>
+            <td>24</td>
+            <td>25</td>
+            <td>26</td>
+            <td>27</td>
+            <td>28</td>
+            <td>29</td>
+            <td>30</td>
+        </tr>
+        <tr>
+            <td>31</td>
+            <td colspan="6"></td>
+        </tr>
+    </table>
+            </fieldset>
+            <button type="submit">Register</button>
+            <button type="submit">Reset</button>
+    </form>
+    </div>
+</body>
+</html>

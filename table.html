@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Creation</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            width: 80%;
+            margin: auto;
+            text-align: center;
+        }
+        th,td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        th{
+            background-color:rgb(119, 119, 128);
+        }
+        .tr,td{
+            background-color: bisque;
+        }
+        .tr,td:hover{
+            background-color: aquamarine;
+        }
+        .day{
+            background-color: rgb(171, 188, 168);
+        }
+        .day:hover{
+            background-color: lightpink;
+        }
+    </style>
+</head>
+<body>
+    <h2 style="text-align: center;">Seminar</h2>
+    <table border="1" cellpadding="5" cellspacing="0">
+        <tr>
+            <th rowspan="2">Day</th>
+            <th colspan="2">Schedule</th>
+            <th rowspan="2">Topics</th>
+        </tr>
+        <tr>
+            <th>Begin</th>
+            <th>End</th>
+        </tr>
+        <tr>
+            <td  rowspan="2" class="day">Monday</td>
+            <td>8:00 a.m</td>
+            <td>5:00 P.m</td>
+            <td>Introduction to XML</td>
+        </tr>
+        <tr>
+            <td>8:00 a.m</td>
+            <td>5:00 P.m</td>
+            <td>Validity:DTD and Relax NG</td>
+        </tr>
+        <tr>
+            <td rowspan="3" class="day">Tuesday</td>
+            <td>8:00 a.m</td>
+            <td>11:00 a.m</td>
+            <td rowspan="2">XPath</td>
+        </tr>
+        <tr>
+            <td>11:00 p.m</td>
+            <td>2:00 p.m</td>
+        </tr>
+        <tr>
+            <td>2:00 p.m</td>
+            <td>5:00 p.m</td>
+            <td colspan="3">XSL Transformation</td>
+        </tr>
+        <tr>
+            <td rowspan="4" class="day">Wednesday</td>
+            <td>8:00 a.m</td>
+            <td>12:00 p.m</td>
+            <td colspan="4"> XSL Formating Objects</td>
+        </tr>
+        </table>
+        <br><br><br><br>
+        <table border="1" cellpadding="8" cellspacing="0">
+
+            <tr>
+                <th rowspan="3">Sr.NO</th>
+                <th rowspan="3">Details of the Services Provided</th>
+                <th rowspan="3">Qty</th>
+                <th colspan="2">Service Period</th>
+                <th colspan="4">Service Performance Details</th>
+            </tr>
+            <tr>
+                <th rowspan="2">From</th>
+                <th rowspan="2">To</th>
+                <th rowspan="2">S.No</th>
+                <th rowspan="2">Service ID No:</th>
+                <th rowspan="2">Gap in Service (in days)</th>
+                <th rowspan="2">Overall Performance Remarks</th>
+            </tr>
+            <tr></tr>
+            <tr>
+                <td rowspan="3" class="day">1</td>
+                <td rowspan="3"></td>
+                <td rowspan="3"></td>
+                <td rowspan="3"></td>
+                <td rowspan="3"></td>
+                <td>1</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td rowspan="2" class="day">2</td>
+                <td rowspan="2"></td>
+                <td rowspan="2"></td>
+                <td rowspan="2"></td>
+                <td rowspan="2"></td>
+                <td>1</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+</table>
+<br><br><br>
+<table border="1" cellpadding="8" cellspacing="0">
+    <tr>
+        <th>Name</th>
+        <th colspan="2">Jobs</th>
+        <th>Working Experience</th>
+    </tr>
+    <tr>
+        <td class="day">John</td>
+        <td>Software Engineer</td>
+        <td>Data Analyst</td>
+        <td rowspan="2">5 Years</td>
+    </tr>
+    <tr>
+        <td class="day">Ale</td>
+        <td colspan="2">Senior Web Developer</td>
+    </tr>
+    <tr>
+        <td class="day">Jack</td>
+        <td>Junior Tech Writer</td>
+        <td>Blogger</td>
+        <td>6 months</td>
+    </tr>
+    <br><br>
+    <table border="1" cellspacing="8"cellpadding="0">
+        <tr>
+            <h2 style="text-align: center;">Weekly TimeTable</h2>
+        </tr>
+        <tr>
+            <th>Day</th>
+            <th >Period 1</th>
+            <th>Period 2</th>
+            <th>Period 3</th>
+            <th rowspan="7">Lunch</th>
+            <th>Period 4</th>
+            <th>Period 5</th>
+        </tr>
+        <tr>
+        <td class="day">Monday</td>
+        <td>Maths</td>
+        <td>Maths</td>
+        <td>English</td>
+        <td>Science</td>
+        <td>Computer</td>
+        </tr>
+        <tr>
+        <td class="day">Tuesday</td>
+        <td>English</td>
+        <td>Science</td>
+        <td>Computer</td>
+        <td>Social</td>
+        <td>PT</td>
+    </tr>
+        <tr>
+            <td class="day">Wednesday</td>
+            <td colspan="2">Physics</td>
+            <td>Chemistry</td>
+            <td>Maths</td>
+            <td>English</td>
+        </tr>
+        <tr>
+            <td class="day">Thursday</td>
+            <td>Maths</td>
+            <td colspan="2">Chemistry</td>
+            <td colspan="2"> Physics</td>
+        </tr>
+        <tr>
+            <td class="day">Friday</td>
+            <td rowspan="2">English</td>
+            <td>Maths</td>
+            <td>LIB</td>
+            <td>English</td>
+            <td>Physics</td>
+        </tr>
+        <tr>
+            <td class="day">Saturday</td>
+            <td>Biology</td>
+            <td>Maths</td>
+            <td>Physics</td>
+            <td>PT</td>
+        </tr>
+    </table>
+</table>
+</body>
+</html>
