@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../simple pricing Table"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Student Dashboard"
+	}
+}
